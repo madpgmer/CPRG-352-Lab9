@@ -20,7 +20,7 @@ public class AccountService {
         return null;
     }
     
-    public boolean forgotPassword(String email, String path){
+    public static boolean forgotPassword(String email, String path){
         UserDB userDB = new UserDB();
         try {
         User user = userDB.get(email);
