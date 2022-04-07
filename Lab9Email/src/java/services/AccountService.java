@@ -15,19 +15,17 @@ public class AccountService {
                 return user;
             }
         } catch (Exception e) {
-        }
-        
+            
+        }        
         return null;
     }
     
     public static boolean forgotPassword(String email, String path){
         UserDB userDB = new UserDB();
         try {
-        User user = userDB.get(email);
-        
-        String to = user.getEmail();
-        
-        //following code imported from Project JavaMailDemo/src/java/services/AccountService
+                User user = userDB.get(email);        
+                //following code imported from Project JavaMailDemo/src/java/services/AccountService
+                String to = user.getEmail();
                 String subject = "Notes App Login";
                 String template = path + "/emailtemplates/login.html";
                 

@@ -16,7 +16,7 @@
                 <form action="login" method="post">
                         <div class="mb-3">
                             <label for="email" class="form-label">Email:</label>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required>
+                            <input type="email" class="form-control" name="email" value="${email}" id="email" required>
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Password: </label>
@@ -25,6 +25,7 @@
                         <button type="submit" value="Signin" class="btn btn-primary">Submit</button>
                 </form>
                 <span><a href="forgot"> Forgot password?</a></span>
+                
                 </div>
             </div>
         </div>
